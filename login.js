@@ -157,4 +157,4 @@ window.addEventListener("scroll", () => {
     if (window.innerWidth <= 900) {
         loginMode.classList.remove("show");
     }
-})
+});
