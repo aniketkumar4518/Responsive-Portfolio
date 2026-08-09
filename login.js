@@ -1,4 +1,3 @@
-
 const menuBtn = document.getElementById("menuBtn");
 
 const navMenu = document.querySelector(".nav-links");
@@ -87,7 +86,7 @@ togglePassword.addEventListener("click", () => {
 
     } else {
 
-        passwordInput.type = "Password";
+        passwordInput.type = "password";
 
         togglePassword.textContent = "👁️";
     }
