@@ -1,13 +1,16 @@
+
 :root {
+    --background: #0B1020;
+    --white: #121A2B;
+    --black: #F8FAFC;
+    --gray: #94A3B8;
 
-    --background: #f7f7f5;
-    --white: #ffffff;
-    --black: #161616;
-    --gray: #777777;
-    --pink: #e4007f;
-    --light-pink: #ffe7f3;
+    --pink: #A78BFA;
+    --light-pink: #211B38;
 
+    --blue: #38BDF8;
 }
+
 
 * {
     margin: 0;
@@ -54,11 +57,11 @@ a {
 
     align-items: center;
 
-    background:rgba(255,255,255,.7);
+    background: rgba(18, 26, 43, 0.85);
 
     backdrop-filter: blur(15px);
 
-    border:1px solid rgba(255,255,255,.3);
+    border: 1px solid #26334A;
 
     border-radius:18px;
 
@@ -135,9 +138,8 @@ a {
 
 .nav-button {
 
-    background: rgba(248, 5, 147, 0.479);
+    background: rgb(218, 124, 239);
     
-    color: white;
 
     padding: 10px 10px;
 
@@ -195,6 +197,8 @@ a {
 
     gap: 10px;
 
+    margin-top: 20px;
+
     color: var(--pink);
 
     font-size: 13px;
@@ -210,7 +214,15 @@ a {
 
     height: 2px;
 
+    margin-top: 18px;
+
+    margin-left: 15px;
+
     background: var(--pink);
+}
+
+.section-label b {
+    margin-top: 10px;
 }
 
 .home h1 {
@@ -260,9 +272,9 @@ h2 span {
 
     gap: 12px;
 
-    background: var(--pink);
+     background: linear-gradient(135deg, #A78BFA, #38BDF8);
 
-    color: white;
+    color: #0B1020;;
 
     padding: 16px 23px;
 
@@ -277,11 +289,15 @@ h2 span {
 
     transform: translateY(-4px);
 
-    box-shadow: 0 12px 25px rgba(228, 0, 127, 0.2);
+    box-shadow: 0 10px 30px rgba(167, 139, 250, 0.3);
 }
 
 .secondary-btn {
     padding: 16px 23px;
+
+    background: #0B1020;
+
+    color: white;
 
     border: 1px solid #ddd;
 
@@ -291,9 +307,9 @@ h2 span {
 }
 
 .secondary-btn:hover {
-    background: var(--black);
+    background: #A78BFA;
 
-    color: white;
+    color: black;
 }
 
 .home-stats {
@@ -386,7 +402,7 @@ h2 span {
 
     z-index: 3;
 
-    background: white;
+    background: #0F172A;
 
     padding: 16px 20px;
 
@@ -422,9 +438,9 @@ h2 span {
 
     place-items: center;
 
-    background: var(--light-pink);
+    background: #A78BFA;
 
-    color: var(--pink);
+    color: white;
 
     border-radius: 10px;
 }
@@ -475,6 +491,11 @@ h2 span {
     left: 10px;
 }
 
+.about-section,
+.projects {
+    background: #0F172A;
+}
+
 .section {
     padding: 120px 6%;
 }
@@ -485,6 +506,8 @@ h2 span {
 
 .about-grid {
     margin-top: 45px;
+
+    margin-left: 10px;
 
     display: grid;
 
@@ -549,6 +572,10 @@ h2 {
     border-radius: 20px;
 
     transition: 0.4s;
+
+    background: #121A2B;
+
+    border-color: #26334A;
 }
 
 .service-card:hover,
@@ -593,7 +620,8 @@ h2 {
 }
 
 .projects {
-    background: white;
+    background: #0F172A;
+    margin-top: 50px;
 }
 
 .project-grid {
@@ -649,7 +677,7 @@ h2 {
 
     border-radius: 50%;
 
-    background: white;
+    background: #0F172A;
 
     font-size: bold;
 } 
@@ -679,7 +707,7 @@ h2 {
 }
 
 .contact-box {
-    background: var(--light-pink);
+    background: #211B38;
 
     border-radius: 25px;
 
@@ -735,11 +763,11 @@ footer a:hover {
 
     justify-content: center;
 
-    background: rgba(15, 23, 42, 0.45);
+    background: rgba(3, 7, 18, 0.8);
 
     padding: 20px;
 
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
 
     opacity: 0;
 
@@ -764,11 +792,11 @@ footer a:hover {
 
     padding: clamp(25px, 5vw, 40px);
 
-    background: #ffffff;
+    background: #121A2B;
 
     border-radius: 25px;
 
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 
     transform: translateY(20px) scale(0.96);
 
@@ -794,27 +822,27 @@ footer a:hover {
 
     border-radius: 50%;
 
-    background: #f3f4f6;
+    background: #26334A;
 
-    color: #555;
+    color: #F8FAFC;
 
     font-size: 22px;
 
     cursor: pointer;
 
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 .close-btn:hover {
-    background: var(--pink);
+    background: #A78BFA;
     
-    color: white;
+    color: #0B1020;
 
     transform: rotate(90deg);
 }
 
 .login-icon {
-    width: 65px;
+    width: 100%px;
 
     height: 65px;
 
@@ -831,6 +859,8 @@ footer a:hover {
     font-size: 15px;
 
     font-weight: bold;
+
+     color: #F8FAFC;
 }
 
 .login-icon span {
@@ -846,11 +876,11 @@ footer a:hover {
 .login-box h4 {
     text-align: center;
 
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 
     padding-left: 1rem;
 
-    color: var(--pink);
+    color: #A78BFA;
 }
 
 .input-unick label {
@@ -863,14 +893,20 @@ footer a:hover {
     font-weight: 500;
 
     margin: 5px 0 15px;
+
+    color: #F8FAFC;
 }
 
 .input-unick input {
     width: 100%;
 
-    padding: 12px 14px;
+    padding: 13px 14px;
 
-    border: 1px solid #e5e7eb;
+    background: #0B1020;
+
+    color: #F8FAFC;
+
+    border: 1px solid #334155;
 
     outline: none;
 
@@ -881,10 +917,14 @@ footer a:hover {
     transition: 0.25s ease;
 }
 
-.input-unick input:focus {
-    border-color: var(--pink);
+.input-unick input::placeholder {
+    color: #94A3B8;
+}
 
-    box-shadow: 0 0 0 4px rgba(255, 117, 24, 0.12);
+.input-unick input:focus {
+    border-color: #A78BFA;
+
+    box-shadow:  0 0 0 4px rgba(167,139,250,.15);
 }
 
 .password-box {
@@ -902,6 +942,8 @@ footer a:hover {
 
     right: 15px;
 
+    color: #F8FAFC;
+
     cursor: pointer;
 
     user-select: none;
@@ -916,18 +958,20 @@ footer a:hover {
 
     gap: 10px;
 
-    margin: 5px 0 22px;
+    color: #CBD5E1;
+
+    margin: 15px 0 22px;
 
     font-size: 13px;
 }
 
 .login-options a,
 .signup-text a {
-    color: var(--pink);
+    color: #A78BFA;
 
     text-decoration: none;
 
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .login-btn {
@@ -939,13 +983,13 @@ footer a:hover {
 
     border-radius: 10px;
 
-    background: rgba(248, 5, 147, 0.479);
+    background: linear-gradient(135deg, #A78BFA, #38BDF8);
 
-    color: black;
+    color: #0B1020;
 
     font-size: 16px;
 
-    font-weight: 600;
+    font-weight: 700;
 
     cursor: pointer;
 
@@ -953,13 +997,9 @@ footer a:hover {
 }
 
 .login-btn:hover {
-    background: var(--pink);
+    transform: translateY(-3px);
 
-    color: white;
-
-    transform: translateY(-2px);
-
-    box-shadow: 0 8px 18px rgba(255, 117, 24, 0.3);
+    box-shadow: 0 8px 25px rgba(167,139,250,.3);
 }
 
 .signup-text {
@@ -967,7 +1007,11 @@ footer a:hover {
 
     text-align: center;
 
-    font-size: 15px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    text-decoration: none;
 }
 
 .mobile-login{
@@ -976,7 +1020,7 @@ footer a:hover {
 
 
 #typing{
-    color: #e4007f;
+    color: #A78BFA;
     font-weight: bold;
 }
 
@@ -1010,7 +1054,11 @@ footer a:hover {
         font-weight:700;
 
         margin-top:1px;
-}
+    }
+
+    .nav-links {
+        margin-top: 17px;
+    }
 
 
     .nav-links,
@@ -1020,6 +1068,26 @@ footer a:hover {
 
     .menu-btn {
         display: block;
+
+        color: #A78BFA;
+
+        background: #121A2B;
+
+        border: 1px solid #334155;
+
+        border-radius: 10px;
+
+        padding: 5px 10px;
+
+        cursor: pointer;
+
+        transition: .3s;
+    }
+
+    .menu-btn:hover {
+        background: #A78BFA;
+        
+        color: #0B1020;
     }
 
     .nav-links.show {
@@ -1045,9 +1113,27 @@ footer a:hover {
 
         width: 100%;
 
-        background: white;
+        background: #0B1020;
 
         z-index: 1000;
+    }
+
+    .nav-links.show a {
+        color: #F8FAFC;
+
+        transition: .3s;
+    }
+
+    .nav-links.show a:hover,
+    .nav-links.show a.active {
+
+        color: #A78BFA;
+    }
+
+    .nav-links.show .mobile-login {
+        color: #d88cfe;
+
+        font-weight: 700;
     }
 
     .section-label { 
@@ -1158,6 +1244,8 @@ footer a:hover {
 
     .project-img {
         height: 300px;
+
+        border: 1px solid #26334A;
     }
 
     .contact-box {
